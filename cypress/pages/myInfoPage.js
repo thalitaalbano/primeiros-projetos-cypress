@@ -32,7 +32,7 @@ class MyInfoPage{
     }
 
     saveForm() {
-    cy.get(this.selectorsList().submitButton).eq(0).click({force:true})
+    cy.get('.orangehrm-card-container > .oxd-form > .oxd-form-actions > .oxd-button').click()
     cy.get('.oxd-toast').should('contain', 'Successfully Saved')
     cy.get('.oxd-toast-close')
     }
